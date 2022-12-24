@@ -1,23 +1,28 @@
 /*#6E07F3 #5BE9B9 cores*/
+/* colocando cor gradiente na pagina toda*/
 body{
     
-    background-image: linear-gradient(#4937ef,#5BE9B9, #5BE9B9);
+    background-image: linear-gradient(#4937ef,#47f9bd, #a2e6f5);
 }
+/*tirando estilo de todas as listas*/
 ul{
     list-style: none;
 }
+/*definindo cor preto e tirando decoração de todos os textos*/
 a {
     color: #000;
     text-decoration: none;
 }
+/*definindo tamanho, formato e margem da foto inicial*/
 .imgperfil{
     margin-left: 5%;
     width: 200px;
     height: 200px;
     border-radius: 30%;
     padding: 0;
-    margin-top: 5%;
+    margin-top: 10%;
 }
+/*definindo tamanho formato e margem da foto do pc lateral*/
 #imgpc{
     margin-left: 5%;
     width: 150%;
@@ -27,43 +32,32 @@ a {
     margin-top: 5%;
 
 }
-
-header{
-    min-width: 100%;
-    max-width: 100%;
-}
-
+/*colocando posição da div da imagem pc*/
 #pc {
     display: flex;
     justify-content: end;
     width: 26%;
     height: 30%;
-    margin-top: 10%;
-    
+    margin-top: 10%;  
 }
+/* div geral da parte de nome e dados pessoais, "div pai"*/
 .dados{
-    background-image: linear-gradient(#4937ef, #5BE9B9);
+    background-image: linear-gradient(#4937ef,#47f9bd);
     display:flex;
     justify-content: column;
     align-items: right;
     text-align: left;
-   
-
 }
-
+/* div responsavel pelo titulo e subtitulo*/
 .bemvindo{
     text-align: center;
     flex-direction: center;
-    background-image: linear-gradient(#4937ef, #5BE9B9);
-   
+    background-image: linear-gradient(#4937ef,#47f9bd);  
     height: 30%;
     width: 70%;
-    margin-left: 3%;
-    
-    
-    
+    margin-left: 3%;  
 }
-
+/* div responsável pela parte dos dados pessoais, posição*/
 #idade{
     font-weight: bold;
     height: 20%;
@@ -71,13 +65,13 @@ header{
     width: 58%;
     
 }
-
+/* cria uma linha divisória na horizontal*/
 .linha{
     width: 80%;
     border: 2px solid #000;
     margin-left: 10%;
 }
-
+/* barra do nav*/
 ul.nav{
     list-style: none;
     margin: 0;
@@ -85,11 +79,11 @@ ul.nav{
     overflow: hidden;
     background-color: #333;
 }
-
+/*alinhar lista no nav*/
 ul.nav li{
     float:left;
 }
-
+/* estilo e cor dos links e nav*/
 ul.nav li a {
     display: block;
     color: white;
@@ -97,26 +91,22 @@ ul.nav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
+/* efeito de mudar a cor ao passar mouse em cima dos links*/
 ul.nav li a:hover:not(active){
     background-color: #111;
 }
-
-ul.nav li a.active{
-    background-color: #04AA6D;
-}
-
-ul.nav li.right{
-    float: right;
-}
-
+/* responsividade do navbar*/
 @media screen and (max-width: 600px) {
     ul.nav li.right, 
     ul.nav li {
         float: none;
     }
+    #instagram, #whatsapp,
+    #github {
+        overflow: hidden;
+    }
   }
-
+/* tamanho e posição da div onde ficam os icones "div pai"*/
 .icones{
     width: 3%;
     height: 3%;
@@ -124,24 +114,23 @@ ul.nav li.right{
     margin-top: 0.7%;
     margin-left: 90%;
 }
-
-  #instagram{
+/* tamanho e margem dos icones*/
+#instagram{
     margin-top: 10%;
     width: 50%;
     margin-right: 30%;
 
   }
-
-  #whatsapp{
+/* tamanho e margem dos icones*/
+#whatsapp{
     margin-top: 10%;
     width: 50%;
     margin-right: 30%;
 
   }
-
-  #github{
+/* tamanho e margem dos icones*/
+#github{
     margin-top: 10%;
     width: 50%;
     margin-right: 30%;
-
-  }
+}
