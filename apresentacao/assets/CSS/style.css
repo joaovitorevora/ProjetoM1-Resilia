@@ -70,6 +70,7 @@ a {
     width: 80%;
     border: 2px solid #000;
     margin-left: 10%;
+    border-radius: 40%;
 }
 /* barra do nav*/
 ul.nav{
@@ -133,4 +134,125 @@ ul.nav li a:hover:not(active){
     margin-top: 10%;
     width: 50%;
     margin-right: 30%;
+}
+
+.subtitulos{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;        
+    }
+
+.margemTexto{
+    margin-left: 2%;
+}
+
+.margem{
+    margin-left: 1%;
+}
+
+#formulario{
+    background-color: #1d1d2e;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 10%;
+    padding:10px 45px;
+    width: 30%;
+    box-shadow: rgba(239, 0, 0, 0.25) 0px 54px 55px, rgba(255, 0, 0, 0.12) 0px -12px 30px, rgba(34, 0, 255, 0.906) 0px 4px 6px, rgba(43, 0, 255, 0.883) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+
+}
+
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+form label{
+    color: white;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5;
+}
+
+form input:focus{
+    border-radius: 16px;
+
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background-color: white;
+    color: #101026;
+    border-radius: 16px;
+}
+.alinhar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#hobbie{
+    border: solid 3px;
+    display: flex;
+    flex-direction: row;
+}
+
+#imgcopa{
+    width: 40%;
+    display: flex;
+    margin-right: 53%;
+    border: solid 3px;
+}
+
+#imgti{
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 60%;
+    
+}
+
+#imgcafe{
+    width: 40%;
+    margin-top: 2%;
+    margin-right: 60%;
+     
+}
+
+.textoHobbie{
+    border: solid 3px;
+    width: 40%;
+    
 }
