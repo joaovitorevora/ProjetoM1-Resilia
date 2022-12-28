@@ -1,8 +1,15 @@
 /*#6E07F3 #5BE9B9 cores*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 /* colocando cor gradiente na pagina toda*/
+html{
+    scroll-behavior: smooth;
+}
 body{
-    
-    background-image: linear-gradient(#4937ef,#47f9bd, #a2e6f5);
+    margin: 0;
+    background-image: linear-gradient(#4937ef,#47f9bd, #2e67bc);
 }
 /*tirando estilo de todas as listas*/
 ul{
@@ -50,6 +57,7 @@ a {
 }
 /* div responsavel pelo titulo e subtitulo*/
 .bemvindo{
+    font-family: oleo Script, arial;
     text-align: center;
     flex-direction: center;
     background-image: linear-gradient(#4937ef,#47f9bd);  
@@ -59,7 +67,7 @@ a {
 }
 /* div responsável pela parte dos dados pessoais, posição*/
 #idade{
-    font-weight: bold;
+    font-family: kanit, arial;
     height: 20%;
     text-align: left;
     width: 58%;
@@ -70,7 +78,7 @@ a {
     width: 80%;
     border: 2px solid #000;
     margin-left: 10%;
-    border-radius: 40%;
+    border-radius: 50%;
 }
 /* barra do nav*/
 ul.nav{
@@ -109,7 +117,8 @@ ul.nav li a:hover:not(active){
   }
 /* tamanho e posição da div onde ficam os icones "div pai"*/
 .icones{
-    width: 3%;
+    
+    width: 7%;
     height: 3%;
     display: flex;
     margin-top: 0.7%;
@@ -138,12 +147,19 @@ ul.nav li a:hover:not(active){
 
 .subtitulos{
     text-align: center;
-    color: white;
+    font-family: oleo Script;
     font-size: 2.5rem;        
     }
+#contato{
+    text-align: center;
+    font-size: 2.5rem;
+    color:white;
+}
 
 .margemTexto{
     margin-left: 2%;
+    font-family: poppins ;
+    font-size: 20px;
 }
 
 .margem{
@@ -151,6 +167,7 @@ ul.nav li a:hover:not(active){
 }
 
 #formulario{
+    margin-bottom: 2%;
     background-color: #1d1d2e;
     display: flex;
     justify-content: center;
@@ -224,35 +241,76 @@ form button:hover{
     margin-top: 2%;
 }
 
-#hobbie{
-    border: solid 3px;
+.hobbie{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    font-family: poppins ;
 }
 
 #imgcopa{
     width: 40%;
-    display: flex;
-    margin-right: 53%;
-    border: solid 3px;
+    margin-right: 2%;
+    margin: 1%;
+    margin-bottom: 7%;
 }
 
 #imgti{
     width: 40%;
-    margin-top: 2%;
-    margin-left: 60%;
+    margin: 1%;
+    margin-bottom: 7%;
     
 }
 
 #imgcafe{
     width: 40%;
-    margin-top: 2%;
-    margin-right: 60%;
-     
+    margin-right: 2%;
+    margin: 1%;
+    margin-bottom: 5%;
 }
 
 .textoHobbie{
-    border: solid 3px;
-    width: 40%;
+    font-size: 20px;
     
+}
+
+#hobbieTi{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-family: poppins ;
+}
+#textoTi{
+    font-size: 20px;
+}
+
+footer{
+    
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+#btn{
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: black;
+    border: 2px solid white;
+    transition: all 1s;
+}
+#btn:hover{
+    background-color: white;
+    color: #101026;
+    border-radius: 16px;
+}
+#btnPos{
+    text-align: left;
+    width: 20%;
+    height: 10%;
 }
