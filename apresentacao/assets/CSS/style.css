@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-/* colocando cor gradiente na pagina toda*/
+
 html{
     scroll-behavior: smooth;
 }
+/* colocando cor gradiente na pagina toda*/
 body{
     margin: 0;
     background-image: linear-gradient(#4937ef,#47f9bd, #2e67bc);
@@ -227,6 +228,7 @@ form textarea{
     font-size: 15px;
     margin-bottom: 30px;
     transition: all 0.5;
+    resize: none;
 }
 form textarea:focus{
     border-radius: 16px;
@@ -329,5 +331,6 @@ footer{
     text-align: left;
     width: 20%;
     height: 10%;
+
 }
 /*fim rodapé*/
